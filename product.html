@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Otra Donna | Products </title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/img/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="static/img/logo.png" width="125px" alt="logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">home</a></li>
+                        <li><a href="">products</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">account</a></li>
+                    </ul>
+                </nav>
+                <i class='fas fa-shopping-basket' style='font-size:24px'></i>
+                <img src="/static/img/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>all products</h2>
+            <select>
+                <option>newest</option>
+                <option>price</option>
+                <option>style</option>
+                <option>year</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="/static/img/product_4.jpg" alt="shoes">
+                <h4>Vintage Nordstrom silver leather mules</h4>
+                <div class="rating">
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='far fa-star' style='font-size:24px'></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="/static/img/product_7.jpg" alt="shoes">
+                <h4>90's leather italian alligator pumps</h4>
+                <div class="rating">
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='far fa-star' style='font-size:24px'></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="/static/img/product_8.jpg" alt="shoes">
+                <h4>80's White ceramic minimalist vase</h4>
+                <div class="rating">
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='far fa-star' style='font-size:24px'></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="/static/img/gal_1.jpg" alt="shoes">
+                <h4>70's Wooden beaded shoulder bag</h4>
+                <div class="rating">
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='far fa-star' style='font-size:24px'></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="/static/img/product_1.jpg" alt="shoes">
+                <h4>90's Diane Von Fustenberg Chocolate brown silk dress</h4>
+                <div class="rating">
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='far fa-star' style='font-size:24px'></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="/static/img/product_11.jpg" alt="shoes">
+                <h4>90's gold leather bag with strap</h4>
+                <div class="rating">
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='fas fa-star' style='font-size:24px'></i>
+                    <i class='far fa-star' style='font-size:24px'></i>
+                </div>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download App</h3>
+                    <p>Download App on IOS</p>
+                    <div class="app-logo">
+                        <img src="static/img/app_store.png" alt="app_download">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="static/img/logo.png" alt="logo">
+                </div>
+                <div class="footer-col-3">
+                    <h3>Help</h3>
+                    <ul>
+                        <li>Order Status</li>
+                        <li>Shipping</li>
+                        <li>Returns & Exchanges</li>
+                        <li>Orders & Payments</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>X</li>
+                        <li>Facebook</li>
+                        <li>Threads</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
