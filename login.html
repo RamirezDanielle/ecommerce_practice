@@ -22,11 +22,11 @@
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="">home</a></li>
-                    <li><a href="">products</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="product.html">products</a></li>
                     <li><a href="">about</a></li>
                     <li><a href="">contact</a></li>
-                    <li><a href="">account</a></li>
+                    <li><a href="login.html">account</a></li>
                 </ul>
             </nav>
             <i class='fas fa-shopping-basket' style='font-size:24px'></i>
@@ -45,16 +45,17 @@
             <div class="col">
                 <div class="form-container">
                     <div class="form-btn">
-                        <span>Login</span>
-                        <span>Register</span>
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
                     </div>
-                    <form>
+                    <form id="login_form">
                         <input type="text" placeholder="Username">
                         <input type="text" placeholder="Passsword">
                         <button type="submit" class="btn">Login</button>
                         <a href="">Forgot password</a>
                     </form>
-                    <form>
+                    <form id="reg_form">
                         <input type="text" placeholder="Username">
                         <input type="email" placeholder="E-mail">
                         <input type="text" placeholder="Passsword">
@@ -117,6 +118,28 @@
             }
         }
     </script>
+
+    <!-- js for menu -->
+    <script>
+        var login_from = document.getElementById("login_form");
+        var reg_from = document.getElementById("reg_form");
+        var indicator = document.getElementById("indicator");
+
+        function register(){
+            reg_from.style.transform = "translateX(0px)";
+            login_from.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            reg_from.style.transform = "translateX(300px)";
+            login_from.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+
+
+
 </body>
 
 </html>

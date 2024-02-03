@@ -410,6 +410,7 @@ th:last-child {
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .form-container span{
@@ -428,8 +429,9 @@ th:last-child {
 .form-container form{
     max-width: 300px;
     padding: 0 20px;
-    /* position: absolute; */
+    position: absolute;
     top: 130px;
+    transition: transform 1s;
 }
 
 form input {
@@ -438,6 +440,41 @@ form input {
     margin: 10px 0;
     padding: 0 10px;
 }
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+#login_form{
+    left: -300px;
+}
+
+#reg_form {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#indicator {
+    width: 100px;
+    border: none;
+    height: 3px;
+    background: #555;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
 
 /* media screen size */
 
